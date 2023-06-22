@@ -1,6 +1,9 @@
 import './globals.css';
 import { Inter, Nunito, Nunito_Sans } from 'next/font/google';
 
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+
 const nunito = Nunito({
 	subsets: ['latin'],
 	display: 'swap',
@@ -27,7 +30,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${nunito.variable} ${nunito_sans.variable}`}>
-				{children}
+				<Header />
+				<main className="flex flex-col items-center justify-between p-24">
+					{children}
+				</main>
+				<Footer />
 			</body>
 		</html>
 	);
