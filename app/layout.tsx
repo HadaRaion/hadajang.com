@@ -1,7 +1,17 @@
 import './globals.css';
 import { Inter, Nunito, Nunito_Sans } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const nunito = Nunito({
+	subsets: ['latin'],
+	display: 'swap',
+	variable: '--font-nunito',
+});
+
+const nunito_sans = Nunito_Sans({
+	subsets: ['latin'],
+	display: 'swap',
+	variable: '--font-nonito-sans',
+});
 
 export const metadata = {
 	title: 'Hada Jang',
@@ -16,7 +26,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>{children}</body>
+			<body className={`${nunito.variable} ${nunito_sans.variable}`}>
+				{children}
+			</body>
 		</html>
 	);
 }
