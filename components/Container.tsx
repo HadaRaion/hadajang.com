@@ -9,7 +9,7 @@ const Container = ({
 }) => (
 	<div
 		className={classNames(
-			'mx-5 sm:mx-8 lg:mx-12 2xl:mx-16 bg-primary',
+			'bg-light/20 w-maxWidthSection mx-auto px-4 sm:px-8 lg:px-12 lg:text-left',
 			className
 		)}>
 		{children}
@@ -17,3 +17,4 @@ const Container = ({
 );
 
 export default Container;
+// mx-5 sm:mx-8 lg:mx-12 2xl:mx-16

@@ -25,6 +25,9 @@ module.exports = {
 			height: {
 				screenHeightWithoutHeader: 'calc(100dvh - 5rem)',
 			},
+			width: {
+				maxWidthSection: 'var(--max-width-section)',
+			},
 		},
 	},
 	plugins: [],
