@@ -1,10 +1,10 @@
-import Image from 'next/image';
 import Container from './Container';
 import Button from './Button';
+import ProfileImage from './ProfileImage';
 
 export default function Hero() {
 	return (
-		<section className="p-20">
+		<section className="pt-12 pb-24">
 			<Container className="flex items-center">
 				<span className="w-3/5">
 					<h2 className="text-[7rem] leading-none uppercase font-extrabold">
@@ -25,16 +25,7 @@ export default function Hero() {
 					</div>
 				</span>
 				<span className="w-2/5">
-					<div>
-						<Image
-							src="/images/profile.jpg"
-							width={500}
-							height={500}
-							alt="Profile"
-							priority
-						/>
-						<div></div>
-					</div>
+					<ProfileImage />
 				</span>
 			</Container>
 		</section>
