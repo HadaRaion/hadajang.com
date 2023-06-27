@@ -17,7 +17,7 @@ module.exports = {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['var(--font-nonito-sans)'],
+				sans: ['var(--font-nunito-sans)'],
 				round: ['var(--font-nunito)'],
 			},
 			minHeight: {

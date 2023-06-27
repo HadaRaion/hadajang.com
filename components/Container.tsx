@@ -17,4 +17,3 @@ const Container = ({
 );
 
 export default Container;
-// mx-5 sm:mx-8 lg:mx-12 2xl:mx-16

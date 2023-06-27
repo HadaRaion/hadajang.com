@@ -62,7 +62,7 @@ export default function RecentWorks() {
 	];
 
 	return (
-		<section className="pt-32s">
+		<section className="pt-28">
 			<Container>
 				<h3 className="font-round font-bold text-3xl">See my latest works</h3>
 				<ul>

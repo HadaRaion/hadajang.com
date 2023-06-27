@@ -13,7 +13,7 @@ const nunito = Nunito({
 const nunito_sans = Nunito_Sans({
 	subsets: ['latin'],
 	display: 'swap',
-	variable: '--font-nonito-sans',
+	variable: '--font-nunito-sans',
 });
 
 export const metadata = {
@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`${nunito.variable} ${nunito_sans.variable}`}>
+			<body className={`${nunito.variable} ${nunito_sans.variable} font-sans`}>
 				<Header />
 				<main className="flex flex-col items-center justify-between">
 					{children}

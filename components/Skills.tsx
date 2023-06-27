@@ -90,7 +90,7 @@ const tools = [
 
 export default function Skills() {
 	return (
-		<section className="bg-light w-full text-white bg-black pt-28 py-32">
+		<section className="bg-black w-full text-white pt-28 pb-32">
 			<Container className="flex flex-col items-center">
 				<h3 className="font-round font-bold text-3xl">
 					My skills and tools for my work
