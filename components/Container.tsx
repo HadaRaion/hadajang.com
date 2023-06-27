@@ -9,7 +9,7 @@ const Container = ({
 }) => (
 	<div
 		className={classNames(
-			'bg-light/20 w-maxWidthSection mx-auto px-4 sm:px-8 lg:px-12 lg:text-left',
+			'border border-light/20 w-maxWidthSection mx-auto px-4 sm:px-8 lg:px-12 lg:text-left',
 			className
 		)}>
 		{children}

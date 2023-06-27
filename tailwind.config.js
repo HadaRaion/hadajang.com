@@ -13,6 +13,7 @@ module.exports = {
 			light: 'rgb(var(--color-light) / <alpha-value>)',
 			primary: 'rgb(var(--color-primary) / <alpha-value>)',
 			black: '#000',
+			white: '#fff',
 		},
 		extend: {
 			fontFamily: {
@@ -27,6 +28,9 @@ module.exports = {
 			},
 			width: {
 				maxWidthSection: 'var(--max-width-section)',
+			},
+			borderRadius: {
+				large: '1.2rem',
 			},
 		},
 	},
