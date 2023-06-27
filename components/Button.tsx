@@ -3,11 +3,12 @@
 import { useState } from 'react';
 
 type ButtonProps = {
-	href: string;
+	href?: string;
 	label: string;
+	fullWidth?: boolean;
 };
 
-export default function Button({ href, label }: ButtonProps) {
+export default function Button({ href, label, fullWidth }: ButtonProps) {
 	const setSpanPosition = (e: React.MouseEvent<HTMLAnchorElement>) => {
 		if (e.currentTarget) {
 			let parentOffset = e.currentTarget.getBoundingClientRect(),
@@ -26,9 +27,11 @@ export default function Button({ href, label }: ButtonProps) {
 		setSpanPosition(e);
 	};
 
-	return (
+	return href ? (
 		<a
-			className="btn relative flex items-center justify-center w-56 h-20 border-hada font-round text-xl font-bold outline-"
+			className={`btn relative flex items-center justify-center h-20 border-hada font-round text-xl font-bold ${
+				fullWidth ? 'w-full' : 'w-56'
+			}`}
 			href={href}
 			target="_blank"
 			title="New tap"
@@ -37,5 +40,13 @@ export default function Button({ href, label }: ButtonProps) {
 			{label}
 			<span className="absolute block bg-primary"></span>
 		</a>
+	) : (
+		<div
+			className={`btn relative flex items-center justify-center h-20 border-hada font-round text-xl font-bold ${
+				fullWidth ? 'w-full' : 'w-56'
+			}`}
+			aria-label="Disabled button">
+			Coming Soon
+		</div>
 	);
 }
