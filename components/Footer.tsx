@@ -3,7 +3,7 @@ import Container from './Container';
 const contactInfo = [
 	{
 		title: 'LinkedIn',
-		link: 'https://www.linkedin.com/in/hada-jang-0a1a1a1a1/',
+		link: 'https://www.linkedin.com/in/hadajang/',
 	},
 	{
 		title: 'GitHub',
@@ -28,7 +28,8 @@ export default function Footer() {
 								className="text-light hover:text-white"
 								href={info.link}
 								target="_blank"
-								rel="noreferrer">
+								rel="noreferrer"
+								title="New tab">
 								{info.title}
 							</a>
 						</li>
