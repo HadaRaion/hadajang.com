@@ -16,7 +16,7 @@ export default function RecentWorks() {
 			],
 			demoLink: 'https://www.amandadewaaltherapy.com/',
 			githubLink: 'https://github.com/HadaRaion/amanda-de-waal-therapy',
-			image: '/images/place-holder.jpg',
+			image: '/images/thumb-amanda.jpg',
 		},
 		{
 			title: 'Aestehclear',
@@ -24,7 +24,7 @@ export default function RecentWorks() {
 				"Created a website for a cosmetic clinic and customised a WordPress theme. Yoast SEO was used to implement SEO techniques and ensure the website's exposure on search engines like Google.",
 			skills: ['PHP', 'CSS', 'JavaScript', 'WordPress'],
 			demoLink: 'https://aestheclear.com/',
-			image: '/images/place-holder.jpg',
+			image: '/images/thumb-aestheclear.jpg',
 		},
 		{
 			title: 'KEAD Webzine',
@@ -33,7 +33,7 @@ export default function RecentWorks() {
 			skills: ['PHP', 'Sass', 'JavaScript', 'WordPress'],
 			demoLink: 'https://kead-webzine.or.kr/',
 			githubLink: 'https://github.com/HadaRaion/kead-webzine',
-			image: '/images/place-holder.jpg',
+			image: '/images/thumb-kead.jpg',
 		},
 		{
 			title: 'Disaster Alert Mock-up',
@@ -41,7 +41,7 @@ export default function RecentWorks() {
 				"Created progressive web app (PWA) for the Korea Broadcasting System. JavaScript, HTML, CSS, and the Notification API were used in the development process in order to provide push notifications. Created for the Disaster Alert Mock-up service to improve Korea's present disaster alert system by simulating events like typhoons, forest fires, and earthquakes.",
 			skills: ['HTML', 'Sass', 'JavaScript'],
 			githubLink: 'https://github.com/HadaRaion/mobile-disaster-alert',
-			image: '/images/place-holder.jpg',
+			image: '/images/thumb-kbs.jpg',
 		},
 		{
 			title: 'Quantinum Investment',
@@ -57,7 +57,7 @@ export default function RecentWorks() {
 			],
 			demoLink: 'https://quantinuminvestment.com/',
 			githubLink: 'https://github.com/HadaRaion/mobile-disaster-alert',
-			image: '/images/place-holder.jpg',
+			image: '/images/thumb-qi.jpg',
 		},
 	];
 
