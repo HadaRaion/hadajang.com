@@ -20,6 +20,21 @@ export const metadata = {
 	title: 'Hada Jang',
 	description:
 		'A creative Front end developer blending design expertise with technical skills to deliver compelling web experiences.',
+	applicationName: 'Hada Jang',
+	type: 'Portfolio',
+	keywords: [
+		'Hada Jang',
+		'Frontend Developer',
+		'Freelancer',
+		'Portfolio',
+		'Web design',
+		'Vancouver',
+	],
+	authors: [{ name: 'Hada Jang', url: 'https://www.hadajang.com' }],
+	colorScheme: 'light',
+	creator: 'Hada Jang',
+	publisher: 'Hada Jang',
+	robots: 'index, follow',
 };
 
 export default function RootLayout({
