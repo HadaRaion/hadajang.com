@@ -29,11 +29,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`${nunito.variable} ${nunito_sans.variable} font-sans`}>
+			<body className={`${nunito.variable} ${nunito_sans.variable}`}>
 				<Header />
-				<main className="flex flex-col items-center justify-between">
-					{children}
-				</main>
+				<main className="w-full">{children}</main>
 				<Footer />
 			</body>
 		</html>

@@ -16,10 +16,12 @@ const contactInfo = [
 ];
 export default function Footer() {
 	return (
-		<footer className="bg-black w-full text-white py-28">
+		<footer className="bg-black w-full text-white py-16 xl:py-28">
 			<Container>
-				<h3 className="text-6xl font-black">Get In Touch</h3>
-				<ul className="flex gap-10 mt-8">
+				<h3 className="text-[2.5rem] md:text-[3rem] lg:text-6xl font-black">
+					Get In Touch
+				</h3>
+				<ul className="flex gap-10 mt-4 xl:mt-8">
 					{contactInfo.map(info => (
 						<li key={info.title}>
 							<a
@@ -32,7 +34,9 @@ export default function Footer() {
 						</li>
 					))}
 				</ul>
-				<p className="text-light mt-36">© Hada Jang. All Rights Reserved.</p>
+				<p className="text-light mt-20 xl:mt-36">
+					© Hada Jang. All Rights Reserved.
+				</p>
 			</Container>
 		</footer>
 	);

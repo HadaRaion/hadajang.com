@@ -19,28 +19,29 @@ export default function Card({
 	image,
 }: Props) {
 	return (
-		<div className="flex gap-40 py-24">
-			<div className="w-1/2 flex flex-col">
+		<div className="flex flex-col lg:flex-row gap-10 xl:gap-40 py-12 xl:py-24">
+			<div className="w-full lg:w-1/2 flex flex-col">
+				{/* <h4 className=" xl:hidden text-2xl font-bold">{title}</h4> */}
 				<div className="relative aspect-[16/9] w-full border-hada">
 					<Image src={image} alt={title} fill />
 				</div>
-				<div className="flex justify-between gap-10 mt-6">
+				<div className="flex justify-between gap-4 xl:gap-10 mt-4 xl:mt-6">
 					<Button href={demoLink} label="Live Demo" fullWidth />
 					<Button href={githubLink} label="View Source" fullWidth />
 				</div>
 			</div>
-			<div className="w-1/2 flex flex-col">
-				<h4 className="text-4xl font-bold">{title}</h4>
-				<ul className="flex my-8">
+			<div className="w-full lg:w-1/2 flex flex-col">
+				<h4 className="text-2xl lg:text-4xl font-bold">{title}</h4>
+				<ul className="flex my-4 lg:my-8">
 					{skills.map(skill => (
 						<li
 							key={skill}
-							className="text-md after:content-['/'] after:mx-0.5 last:after:content-[''] ">
+							className="text-sm lg:text-md text-light after:content-['/'] after:mx-0.5 last:after:content-[''] ">
 							{skill}
 						</li>
 					))}
 				</ul>
-				<p className="text-xl leading-relaxed">{description}</p>
+				<p className="text-base xl:text-xl leading-relaxed">{description}</p>
 			</div>
 		</div>
 	);

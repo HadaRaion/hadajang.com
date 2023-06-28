@@ -1,7 +1,5 @@
 'use client';
 
-import { useState } from 'react';
-
 type ButtonProps = {
 	href?: string;
 	label: string;
@@ -27,25 +25,23 @@ export default function Button({ href, label, fullWidth }: ButtonProps) {
 		setSpanPosition(e);
 	};
 
+	const btnClass = `btn relative flex items-center justify-center h-14 lg:h-16 xl:h-20 border-hada font-round text-base lg:text-lg xl:text-xl font-bold focus:ring-offset-2 ${
+		fullWidth ? 'w-full' : 'w-56'
+	}`;
+
 	return href ? (
 		<a
-			className={`btn relative flex items-center justify-center h-20 border-hada font-round text-xl font-bold ${
-				fullWidth ? 'w-full' : 'w-56'
-			}`}
+			className={btnClass}
 			href={href}
 			target="_blank"
 			title="New tap"
 			onMouseEnter={handleMouseEnter}
 			onMouseOut={handleMouseOut}>
 			{label}
-			<span className="absolute block bg-primary"></span>
+			<span className="absolute block bg-primary h-1"></span>
 		</a>
 	) : (
-		<div
-			className={`btn relative flex items-center justify-center h-20 border-hada font-round text-xl font-bold ${
-				fullWidth ? 'w-full' : 'w-56'
-			}`}
-			aria-label="Disabled button">
+		<div className={btnClass} aria-label="Disabled button">
 			Coming Soon
 		</div>
 	);

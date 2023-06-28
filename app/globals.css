@@ -14,16 +14,29 @@
 	body {
 		min-height: 100dvh;
 		overflow-y: scroll;
+		@apply font-sans;
+	}
+
+	a {
+		@apply focus:outline-none focus:ring focus:ring-primary;
+	}
+
+	header a {
+		@apply focus:ring-offset-4 rounded-md;
+	}
+
+	footer a {
+		@apply focus:ring-offset-4 focus:ring-offset-black rounded-sm;
 	}
 }
 
 @layer utilities {
 	.border-hada {
-		@apply border-[3px] border-black rounded-large overflow-hidden;
+		@apply border-2 lg:border-[3px] border-black rounded-2xl lg:rounded-large overflow-hidden;
 	}
 
 	.border-hada-light {
-		@apply border-[3px] border-white rounded-large overflow-hidden;
+		@apply border-2 lg:border-[3px] border-white rounded-xl lg:rounded-large overflow-hidden;
 	}
 
 	.btn:hover span {
