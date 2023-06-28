@@ -7,14 +7,24 @@
 		--color-primary: 160 234 66;
 		--color-dark: 28 28 33;
 		--color-light: 152 152 152;
-		/* --max-width-section: 1324px; */
-		--max-width-section: 1400px;
+	}
+
+	::-webkit-scrollbar {
+		@apply w-2;
+	}
+
+	::-webkit-scrollbar-track {
+		@apply bg-black;
+	}
+
+	::-webkit-scrollbar-thumb {
+		@apply bg-primary rounded-md;
 	}
 
 	body {
 		min-height: 100dvh;
 		overflow-y: scroll;
-		@apply font-sans;
+		@apply font-sans selection:bg-primary/80 selection:text-black;
 	}
 
 	a {
