@@ -88,6 +88,9 @@ const tools = [
 	},
 ];
 
+const skillsForMarquee = [...skills, ...skills];
+const toolsForMarquee = [...tools, ...tools];
+
 export default function Skills() {
 	return (
 		<section className="bg-black w-full text-white py-16 lg:pt-28 lg:pb-32">
@@ -96,7 +99,7 @@ export default function Skills() {
 					My skills and tools for my work
 				</h3>
 
-				<ul className="icons flex flex-wrap justify-center gap-2 lg:gap-4 mt-16 lg:mt-20">
+				<ul className="icons mt-20">
 					{skills.map(skill => (
 						<li key={skill.title} className="icon">
 							<span className="icon-image">{skill.icon}</span>
@@ -104,7 +107,7 @@ export default function Skills() {
 						</li>
 					))}
 				</ul>
-				<ul className="icons flex flex-wrap justify-center gap-2 lg:gap-4 mt-12 lg:mt-6">
+				<ul className="icons mt-6">
 					{tools.map(tools => (
 						<li key={tools.title} className="icon">
 							<span className="icon-image">{tools.icon}</span>
@@ -115,6 +118,30 @@ export default function Skills() {
 					))}
 				</ul>
 			</Container>
+			<div className="marquee mt-10 md:mt-16">
+				<div className="track">
+					<ul className="content">
+						{skillsForMarquee.map(skill => (
+							<li key={skill.title} className="icon">
+								<span className="icon-image">{skill.icon}</span>
+								<span className="icon-name">{skill.title}</span>
+							</li>
+						))}
+					</ul>
+				</div>
+			</div>
+			<div className="marquee mt-4">
+				<div className="track">
+					<ul className="content">
+						{toolsForMarquee.map(tool => (
+							<li key={tool.title} className="icon">
+								<span className="icon-image">{tool.icon}</span>
+								<span className="icon-name">{tool.title}</span>
+							</li>
+						))}
+					</ul>
+				</div>
+			</div>
 		</section>
 	);
 }

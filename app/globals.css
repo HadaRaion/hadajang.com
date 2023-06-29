@@ -63,17 +63,21 @@
 		z-index: -1;
 	}
 
+	.icons {
+		@apply hidden lg:flex flex-wrap justify-center gap-2 lg:gap-4;
+	}
+
+	.icon-image svg {
+		width: 100%;
+		height: 100%;
+	}
+
 	.icons .icon {
-		@apply relative w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 border-hada-light transition hover:border-primary/70 duration-500 ease-in-out;
+		@apply relative w-16 h-16 xl:w-20 xl:h-20 border-hada-light transition hover:border-primary/70 duration-500 ease-in-out;
 	}
 
 	.icons .icon-image {
-		@apply absolute block w-full p-[0.7rem] lg:p-4 xl:p-5;
-	}
-
-	.icons .icon-image svg {
-		width: 100%;
-		height: 100%;
+		@apply absolute block w-full p-4 xl:p-5;
 	}
 
 	.icons .icon-name {
@@ -91,10 +95,30 @@
 
 	.icons .icon-name::after {
 		content: attr(data-name);
-		@apply text-black font-bold text-sm z-10 opacity-0 scale-50 transition delay-100 duration-500 ease-in-out;
+		@apply text-black font-bold text-xs xl:text-sm z-10 opacity-0 scale-50 transition delay-100 duration-500 ease-in-out;
 	}
 
 	.icon:hover .icon-name::after {
 		@apply opacity-100 scale-100;
+	}
+
+	.marquee {
+		@apply relative w-full h-16 overflow-x-hidden lg:hidden;
+	}
+
+	.track {
+		@apply absolute will-change-transform whitespace-nowrap animate-[marquee_14s_linear_infinite];
+	}
+
+	.content {
+		@apply flex gap-4;
+	}
+
+	.content .icon {
+		@apply flex items-center border-hada-light p-4 font-medium;
+	}
+
+	.content .icon .icon-image {
+		@apply w-6 h-6 mr-2;
 	}
 }
