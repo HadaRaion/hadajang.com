@@ -6,7 +6,7 @@ export default function RecentWorks() {
 		{
 			title: 'Amanda de Waal Therapy',
 			description:
-				'Built a website for a BC Registered Clinical Counsellor. Handled everything from logo design to deployment. Utilized TypeScript, Next.js, Tailwind CSS, and Framer Motion for development. Integrated Instagram API and Nodemailer for enhanced functionality.',
+				'A project created for a newly registered clinical counselor, Amanda de Waal Therapy involved designing a logo to match the desired aesthetic. With a focus on SEO optimization and fast TTV and FCP, the website was developed using Next.js. To facilitate easy contact, Nodemailer was integrated to enable visitors to send emails directly from the website. Instagram API was utilized to display client feeds, establishing a sense of familiarity and trust. Additionally, a prominent link for additional appointments was placed at the bottom of the screen. The website was registered on Google and attracted 4 new patients within the first month.',
 			skills: [
 				'React',
 				'Next.js',
@@ -21,7 +21,7 @@ export default function RecentWorks() {
 		{
 			title: 'Aestehclear',
 			description:
-				"Created a website for a cosmetic clinic and customised a WordPress theme. Yoast SEO was used to implement SEO techniques and ensure the website's exposure on search engines like Google.",
+				"Developed the website for Aestheclear, a Sydney-based skincare clinic. Despite budget constraints, we achieved robust internal content management through a customized WordPress theme. Carefully selected a theme aligned with the clinic's brand, making adjustments to colors, fonts, and layout. Optimized search performance using Yoast SEO plugin. The result is a professional, user-friendly website showcasing Aestheclear's services within budgetary constraints.",
 			skills: ['PHP', 'CSS', 'JavaScript', 'WordPress'],
 			demoLink: 'https://aestheclear.com/',
 			image: '/images/thumb-aestheclear.jpg',
@@ -29,7 +29,7 @@ export default function RecentWorks() {
 		{
 			title: 'KEAD Webzine',
 			description:
-				"Created a WordPress theme for Korea Employment Agency for Persons with Disabilities's monthly online magazine. Used Git for version control and PHP, HTML, CSS, and JavaScript for development. Received more than 600 members and a certification for web accessibility from the Ministry of Science and ICT.",
+				'This project involved transforming a monthly magazine published by the Korea Employment Agency for Persons with Disabilities into a web-based magazine. WordPress CMS was used for internal article uploads, and a custom theme was developed for a tailored design. A WordPress admin page block editor was created to allow unique designs for articles in different categories. A form page was created for subscription reviews and event participation. Integration with the Stibee newsletter service resulted in over 600 subscribers receiving monthly newsletters. The website prioritized web accessibility and received certification from the Ministry of Science and ICT.',
 			skills: ['PHP', 'Sass', 'JavaScript', 'WordPress'],
 			demoLink: 'https://kead-webzine.or.kr/',
 			githubLink: 'https://github.com/HadaRaion/kead-webzine',
@@ -38,7 +38,7 @@ export default function RecentWorks() {
 		{
 			title: 'Disaster Alert Mock-up',
 			description:
-				"Created progressive web app (PWA) for the Korea Broadcasting System. JavaScript, HTML, CSS, and the Notification API were used in the development process in order to provide push notifications. Created for the Disaster Alert Mock-up service to improve Korea's present disaster alert system by simulating events like typhoons, forest fires, and earthquakes.",
+				"As part of the national project 'Customized Disaster Media Service Platform Development for Recognizing Vulnerable Groups', a mock-up of a disaster information app was developed for exhibition purposes on UHD TVs and smart devices since 2019. Various scenarios were created for earthquakes, wildfires, and typhoons, and web app planning was conducted. An administrator mode was implemented to send different alerts to devices based on the scenarios. Leveraging the Notification API, push notifications were sent to smart devices, directing users to specific pages for additional information. The demonstration was successfully completed, and the actual app development for service will begin in the latter half of 2023.",
 			skills: ['HTML', 'Sass', 'JavaScript'],
 			githubLink: 'https://github.com/HadaRaion/mobile-disaster-alert',
 			image: '/images/thumb-kbs.jpg',
@@ -46,7 +46,7 @@ export default function RecentWorks() {
 		{
 			title: 'Quantinum Investment',
 			description:
-				'Built a multi-language website, leveraging Next.js, Sass, and Framer Motion for development. Implemented i18next for seamless multi-language support.',
+				'This project involved creating a website for an investment advisory company targeting both domestic and international clients. To optimize SEO and ensure fast TTV and FCP, Next.js was used for development, while i18next was implemented for multilingual services. Lottie was used to convert animations created by a BI production company, providing a slideshow effect on the homepage with faster loading than videos. Carefully selected images showcased expertise, and a clean layout was designed to instill trust. Framer Motion was utilized to add subtle animations, creating a fresh and lightweight user experience.',
 			skills: [
 				'React',
 				'Next.js',

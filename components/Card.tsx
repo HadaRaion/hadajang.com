@@ -19,9 +19,8 @@ export default function Card({
 	image,
 }: Props) {
 	return (
-		<div className="flex flex-col lg:flex-row gap-10 xl:gap-40 py-12 xl:py-24">
+		<div className="flex flex-col lg:flex-row gap-10 xl:gap-28 py-12 xl:py-24">
 			<div className="w-full lg:w-1/2 flex flex-col">
-				{/* <h4 className=" xl:hidden text-2xl font-bold">{title}</h4> */}
 				<div className="relative aspect-[16/9] w-full border-hada">
 					<Image src={image} alt={title} fill />
 				</div>
