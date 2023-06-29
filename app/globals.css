@@ -53,6 +53,7 @@
 		width: 225%;
 		height: calc(14rem * 2.25);
 	}
+
 	.btn > span {
 		width: 0;
 		height: 0;
@@ -62,8 +63,38 @@
 		z-index: -1;
 	}
 
-	.icons svg {
+	.icons .icon {
+		@apply relative w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 border-hada-light transition hover:border-primary/70 duration-500 ease-in-out;
+	}
+
+	.icons .icon-image {
+		@apply absolute block w-full p-[0.7rem] lg:p-4 xl:p-5;
+	}
+
+	.icons .icon-image svg {
 		width: 100%;
 		height: 100%;
+	}
+
+	.icons .icon-name {
+		@apply absolute w-full h-full flex items-center justify-center text-center;
+	}
+
+	.icons .icon-name::before {
+		content: '';
+		@apply absolute bg-primary block w-[200%] h-[200%] rounded-full scale-0 transition duration-500 ease-in-out;
+	}
+
+	.icon:hover .icon-name::before {
+		@apply scale-100;
+	}
+
+	.icons .icon-name::after {
+		content: attr(data-name);
+		@apply text-black font-bold text-sm z-10 opacity-0 scale-50 transition delay-100 duration-500 ease-in-out;
+	}
+
+	.icon:hover .icon-name::after {
+		@apply opacity-100 scale-100;
 	}
 }

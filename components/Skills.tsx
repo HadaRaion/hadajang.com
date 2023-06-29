@@ -89,8 +89,6 @@ const tools = [
 ];
 
 export default function Skills() {
-	const iconStyle =
-		'w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 p-[0.7rem] lg:p-4 xl:p-5 border-hada-light';
 	return (
 		<section className="bg-black w-full text-white py-16 lg:pt-28 lg:pb-32">
 			<Container className="flex flex-col items-center">
@@ -100,15 +98,19 @@ export default function Skills() {
 
 				<ul className="icons flex flex-wrap justify-center gap-2 lg:gap-4 mt-16 lg:mt-20">
 					{skills.map(skill => (
-						<li key={skill.title} className={iconStyle}>
-							{skill.icon}
+						<li key={skill.title} className="icon">
+							<span className="icon-image">{skill.icon}</span>
+							<span className="icon-name" data-name={skill.title}></span>
 						</li>
 					))}
 				</ul>
 				<ul className="icons flex flex-wrap justify-center gap-2 lg:gap-4 mt-12 lg:mt-6">
 					{tools.map(tools => (
-						<li key={tools.title} className={iconStyle}>
-							{tools.icon}
+						<li key={tools.title} className="icon">
+							<span className="icon-image">{tools.icon}</span>
+							<span className="icon-name" data-name={tools.title}>
+								<span className="sr-only">{tools.title}</span>
+							</span>
 						</li>
 					))}
 				</ul>

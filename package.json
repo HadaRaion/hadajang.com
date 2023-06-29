@@ -2,7 +2,7 @@
 	"name": "hadajang.com",
 	"version": "0.1.0",
 	"private": true,
-	"license": "(MIT OR Apache-2.0)",
+	"license": "MIT",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
