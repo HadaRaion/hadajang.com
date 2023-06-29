@@ -56,7 +56,7 @@ export default function RecentWorks() {
 				'i18next',
 			],
 			demoLink: 'https://quantinuminvestment.com/',
-			githubLink: 'https://github.com/HadaRaion/mobile-disaster-alert',
+			githubLink: 'https://github.com/HadaRaion/quantinum',
 			image: '/images/thumb-qi.jpg',
 		},
 	];
