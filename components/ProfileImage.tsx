@@ -18,7 +18,7 @@ export default function ProfileImage() {
 	return (
 		<div className="relative aspect-[3/4] m-8" onMouseMove={handleMouseMove}>
 			<div className="absolute border w-full h-full inset-0 border-hada">
-				<Image src="/images/profile.jpg" alt="Profile" fill priority />
+				<Image src="/images/profile-hada.jpg" alt="Profile" fill priority />
 			</div>
 
 			<div
@@ -30,3 +30,5 @@ export default function ProfileImage() {
 		</div>
 	);
 }
+
+// it is pronounced Hadda not Hayda 😉
