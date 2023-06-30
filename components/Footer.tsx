@@ -21,7 +21,7 @@ export default function Footer() {
 				<h3 className="text-[2.5rem] md:text-[3rem] lg:text-6xl font-black">
 					Get In Touch
 				</h3>
-				<ul className="flex gap-10 mt-4 xl:mt-8">
+				<ul className="flex gap-10 mt-4 xl:mt-8" aria-label="Contact links">
 					{contactInfo.map(info => (
 						<li key={info.title}>
 							<a

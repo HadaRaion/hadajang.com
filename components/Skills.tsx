@@ -93,24 +93,32 @@ const toolsForMarquee = [...tools, ...tools];
 
 export default function Skills() {
 	return (
-		<section className="bg-black w-full text-white py-16 lg:pt-28 lg:pb-32">
+		<section
+			className="bg-black w-full text-white py-16 lg:pt-28 lg:pb-32"
+			aria-labelledby="skills-title">
 			<Container className="flex flex-col items-center">
-				<h3 className="font-round font-bold text-2xl xl:text-3xl">
+				<h3
+					className="font-round font-bold text-2xl xl:text-3xl"
+					id="skills-title">
 					My skills and tools for my work
 				</h3>
 
-				<ul className="icons mt-20">
+				<ul className="icons mt-20" aria-label="Skills for development">
 					{skills.map(skill => (
 						<li key={skill.title} className="icon">
-							<span className="icon-image">{skill.icon}</span>
+							<span className="icon-image" aria-hidden>
+								{skill.icon}
+							</span>
 							<span className="icon-name" data-name={skill.title}></span>
 						</li>
 					))}
 				</ul>
-				<ul className="icons mt-6">
+				<ul className="icons mt-6" aria-label="Tools for design">
 					{tools.map(tools => (
 						<li key={tools.title} className="icon">
-							<span className="icon-image">{tools.icon}</span>
+							<span className="icon-image" aria-hidden>
+								{tools.icon}
+							</span>
 							<span className="icon-name" data-name={tools.title}>
 								<span className="sr-only">{tools.title}</span>
 							</span>
@@ -120,10 +128,12 @@ export default function Skills() {
 			</Container>
 			<div className="marquee mt-10 md:mt-16">
 				<div className="track">
-					<ul className="content">
+					<ul className="content" aria-label="Skills for development">
 						{skillsForMarquee.map(skill => (
 							<li key={skill.title} className="icon">
-								<span className="icon-image">{skill.icon}</span>
+								<span className="icon-image" aria-hidden>
+									{skill.icon}
+								</span>
 								<span className="icon-name">{skill.title}</span>
 							</li>
 						))}
@@ -132,10 +142,12 @@ export default function Skills() {
 			</div>
 			<div className="marquee mt-4">
 				<div className="track">
-					<ul className="content">
+					<ul className="content" aria-label="Tools for design">
 						{toolsForMarquee.map(tool => (
 							<li key={tool.title} className="icon">
-								<span className="icon-image">{tool.icon}</span>
+								<span className="icon-image" aria-hidden>
+									{tool.icon}
+								</span>
 								<span className="icon-name">{tool.title}</span>
 							</li>
 						))}

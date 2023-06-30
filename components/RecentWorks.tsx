@@ -62,7 +62,7 @@ export default function RecentWorks() {
 	];
 
 	return (
-		<section className="pt-16 xl:pt-28 pb-4">
+		<section className="pt-16 xl:pt-28 pb-4" aria-label="Works">
 			<Container>
 				<h3 className="font-round font-bold text-2xl xl:text-3xl text-center lg:text-left">
 					See my latest works

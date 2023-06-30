@@ -4,7 +4,7 @@ import ProfileImage from './ProfileImage';
 
 export default function Hero() {
 	return (
-		<section className="pb-16 lg:pt-12 xl:pb-24">
+		<section className="pb-16 lg:pt-12 xl:pb-24" aria-label="Profile">
 			<Container className="flex flex-col lg:flex-row lg:items-center">
 				<span className="w-full lg:w-3/5 text-center lg:text-left mt-4 lg:mt-0">
 					<h2 className="text-5xl lg:text-7xl xl:text-[7rem] leading-none uppercase font-extrabold">
