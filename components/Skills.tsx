@@ -129,8 +129,8 @@ export default function Skills() {
 			<div className="marquee mt-10 md:mt-16">
 				<div className="track">
 					<ul className="content" aria-label="Skills for development">
-						{skillsForMarquee.map(skill => (
-							<li key={skill.title} className="icon">
+						{skillsForMarquee.map((skill, index) => (
+							<li key={index} className="icon">
 								<span className="icon-image" aria-hidden>
 									{skill.icon}
 								</span>
@@ -143,8 +143,8 @@ export default function Skills() {
 			<div className="marquee mt-4">
 				<div className="track">
 					<ul className="content" aria-label="Tools for design">
-						{toolsForMarquee.map(tool => (
-							<li key={tool.title} className="icon">
+						{toolsForMarquee.map((tool, index) => (
+							<li key={index} className="icon">
 								<span className="icon-image" aria-hidden>
 									{tool.icon}
 								</span>
