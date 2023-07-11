@@ -22,7 +22,12 @@ export default function Card({
 		<div className="flex flex-col lg:flex-row gap-10 xl:gap-28 py-12 xl:py-24">
 			<div className="w-full lg:w-1/2 flex flex-col">
 				<div className="relative aspect-[16/9] w-full border-hada">
-					<Image src={image} alt={title + ' thumbnail'} fill />
+					<Image
+						src={image}
+						alt={title + ' thumbnail'}
+						fill
+						sizes="(max-width: 768px) 100vw, 50vw"
+					/>
 				</div>
 				<div className="flex justify-between gap-4 xl:gap-10 mt-4 xl:mt-6">
 					<Button href={demoLink} label="Live Demo" fullWidth />
