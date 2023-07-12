@@ -28,7 +28,7 @@ export default function ProfileImage() {
 
 	return (
 		<div
-			className="grid place-items-center aspect-[3/4]"
+			className="w-full h-full grid place-items-center aspect-[3/4]"
 			onMouseMove={handleMouseMove}
 			onMouseOut={handleMouseOut}>
 			<div className="relative w-[80%] h-[80%]">
